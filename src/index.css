@@ -1,13 +1,148 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/*=============== VARIABLES CSS LIGHT AND DARK THEME ===============*/
+:root {
+  /*========== Colors ==========*/
+  --purple: #6f1559;
+  /* Roxo Ametista */
+  --pink: #9b0a77;
+  /* Magenta Profundo */
+  --dark: #0d1117;
+  /* Preto Meia-Noite */
+  --black: #070707;
+  /* Preto Absoluto */
+  --white: #f4f4f4;
+  /* Branco Neve */
+  --yellow: #f2ae1c;
+  /* Amarelo Dourado */
+  --blue: #2c3262;
+  /* Azul Crepúsculo */
+  --green: #b0e202;
+  /* Verde Limão */
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /*========== Font Size ==========*/
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2.15rem;
+  --h3-font-size: 1.5rem;
+  --h4-font-size: 1.2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-normal: 300;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::selection {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*=============== RESET STYLE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--body-color);
+  font-size: var(--normal-font-size);
+  color: var(--black);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+h4 {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-normal);
+}
+
+p {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-normal);
+}
+
+a {
+  color: var(--white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+/*=============== RESPONSIVE TYPOGRAPHY ===============*/
+@media screen and (min-width: 768px) {
+  :root {
+    /*========== Font Size ==========*/
+    --h1-font-size: 3rem;
+    --h2-font-size: 2.25rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1.2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    /*========== Font Size ==========*/
+    --h1-font-size: 3.25rem;
+    --h2-font-size: 2.25rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1.3rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    /*========== Font Size ==========*/
+    --h1-font-size: 4.5rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 2rem;
+    --h4-font-size: 1.75rem;
+    --normal-font-size: 1.3rem;
+    --small-font-size: 1.1rem;
+  }
 }
